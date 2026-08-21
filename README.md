@@ -1,6 +1,6 @@
 # OpenEUV Abbe
 
-OpenEUV Abbe is a desktop tool for learning and checking EUV lithography aerial-image simulations. The project intentionally keeps only the **Abbe imaging model**: mask near-field and diffraction responses are computed by the strict vector electromagnetic-field solver from [ELitho](https://github.com/takahashi-edalab/elitho), which is referenced by the [EUVlitho](https://github.com/takahashi-edalab/EUVlitho) project, and the returned `Ex/Ey/Ez` components are then accumulated over discrete source points using Abbe imaging.
+OpenEUV Abbe is a desktop tool for learning and checking EUV lithography aerial-image simulations. The project has only the **Abbe imaging model**: mask near-field and diffraction responses are computed by the strict vector electromagnetic-field solver from [ELitho](https://github.com/takahashi-edalab/elitho), which is referenced by the [EUVlitho](https://github.com/takahashi-edalab/EUVlitho) project, and the returned `Ex/Ey/Ez` components are then accumulated over discrete source points using Abbe imaging.
 
 ## 1. Purpose
 
