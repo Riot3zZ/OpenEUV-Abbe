@@ -1,0 +1,41 @@
+name: Bug report / 问题报告
+description: Report a reproducible software or physics-model issue
+title: "[Bug] "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢帮助改进这个初级项目。请勿提交无权公开的掩模或工艺数据。
+  - type: textarea
+    id: problem
+    attributes:
+      label: 问题描述
+      description: 实际发生了什么？你认为正确结果应是什么？
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 最小复现步骤
+      description: 请附参数 JSON、最小掩模和明确步骤。
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: 环境
+      description: 操作系统、Python 版本、OpenEUV Abbe 版本和 ELitho commit
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: 问题类型
+      options:
+        - 软件错误
+        - 物理模型或单位/符号约定
+        - 安装或依赖
+        - 文档
+    validations:
+      required: true
